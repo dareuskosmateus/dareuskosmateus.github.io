@@ -1,8 +1,14 @@
-import * as fs from 'fs';
+const testFolder = './gifs/';
+const fs = require('fs');
+var lol
 
-function randomindex() {
-    return Math.floor(Math.random())
-}
+function randomfile() {
+    const lista = []
+    fs.readdir(testFolder, (err, files) => {
+    files.forEach(file => {
+        lista.push(file);
+    });
+    });
+};
 
-let files = fs.readdir('./gifs')
-console.log(files)
+randomfile()
