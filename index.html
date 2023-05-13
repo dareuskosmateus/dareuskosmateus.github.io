@@ -5,53 +5,55 @@
 		<meta charset="utf-8">
 		<title> Test title </title>
 		<link rel="stylesheet" type="text/css" href="css.css">
-		<script src="typescript.ts"> </script>
 	</head>
 
 	<body>
-		<div id='root'>
-			<div id=top> </div>
+		<div class='top'> 
+		</div>
 
-			<div id='left' class='left shadow'>
+		<div class='row'>
+			<div class='main column left shadow'>
 				<div class='container flex-column'>
-					<font size="18"> Mem dnia </font>
-					<div class='container'>
-						<img src="gifs/monke.gif">
-					</div>
+					<h2> Mem dnia </h2>
+					<img id='mem' src="">
+					<script type="text/javascript">
+							var lista = new Array("https://media.tenor.com/A3hhQKPauQUAAAAd/monad-monoid.gif",
+							 "https://media.tenor.com/QX4IF0UvwukAAAAd/updog-whats-is-dog-want.gif",
+							 "https://media.discordapp.net/attachments/562319414498689024/1103254444658937906/ezgif-2-d182f06bde.gif", 
+							 "https://media.discordapp.net/attachments/791112211740360766/927391063910518834/06217455205f73a228e0a81c631711056d9d6491d65c76182553f945aa3836af_1.gif?width=744&height=512",
+							 "https://cdn.discordapp.com/attachments/1047245552770887743/1106925092283359232/ezgif-5-bc8767e5b7.gif",
+							 "https://media.discordapp.net/attachments/562319414498689024/910419935010910218/video0-16-3-1-1.gif")
+							var random = Math.floor(Math.random()*lista.length);
+							document.getElementById("mem").src = lista[random];
+					</script>
 				</div>
 			</div>
 
-			<div id='center' class='mainbox shadow'>
+			<div class='main column middle shadow'>
 				<div class='container'>
 					<div id="box1"> <h1> Dariusz Romanowicz </h1></div>
 					<div id="box2"> 
 						<h2 class="nobold"> Dane kontaktowe:  </h2>
 						<div id='dane'> 
-							<h4 class="nobold"> Email: dariuszromanowicz@o2.pl </h4>
-						</div>
-					</div>
-
-					</div>
-
-				<div class="container" > 
-					<figure> <figcaption><span style="font-size: 24pt"> Moje linki </span></figcaption>
+							<h4 class="nobold"> Email: dariuszromanowicz(at)o2.pl </h4>
+						<span style="font-size: 24pt"> Moje linki </span>
 						<ul>
 							<span style="font-size: 18pt">
 							<li><a href="https://github.com/dareuskosmateus"> Github </a></li>
 							<li><a> Discord: daro#6342 </a></li>
 							</span>
 						</ul> 
-					</figure>
+						</div>
+					</div>
 				</div>
 			</div>
 
-						<!--
-			<div id='right' class='mainbox right'>
-				<div class='container'>
-
+			<div class='main column right shadow'>
+				<div class='container flex-column'>
+					<input type='text' placeholder="Szukaj">
+					<a class="active" href="#home">Strona główna</a>
 				</div>
 			</div>
-			-->
 
 		</div>
 
@@ -59,6 +61,6 @@
 	</body>
 
 	<footer>
-
+		<a>Copyright 2023 Dariusz Romanowicz</a>
 	</footer>
 </html>

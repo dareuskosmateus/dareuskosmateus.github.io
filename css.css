@@ -1,37 +1,65 @@
 html, body {
+	background-image: linear-gradient(#D3D3D3, #383838);
 	background-color: #A9A9A9;
 	width: 100%;
 	height: 100%;
-}
-
-#root {
-	height: 100%;
-	width: 100%;
-}
-
-#top {
-	margin:auto;
-	width: 100%;
-	height: 10%;
-}
-
-#left {
-	margin: auto;
-	width: 24%;
-	border-radius: 12px;
-	background-color: #D3D3D3;
-}
-
-.mainbox {
 	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+footer {
+	position:fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.main {
+	margin: 0 auto;
+	background-color: #D3D3D3;
+	border-radius: 12px;
 	margin-left: 12px;
 	margin-right: 12px;
-	background-color: #D3D3D3;
-	border-radius: 12px;
-	height: 100%;
-	width: 50%;
-	display: inline-block;
+}
 
+.top {
+	width: 100%;
+	height: 33%;
+	margin-bottom: 18px;
+	background-image: url("https://i.imgur.com/ruda8XT.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nobold {
+	font-weight: normal;
+}
+
+.column {
+	float:left;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 23.1%
+}
+
+.middle {
+	display: inline-block;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .container {
@@ -43,15 +71,7 @@ html, body {
 }
 
 .shadow {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-}
-
-.nobold {
-	font-weight: normal;
-}
-
-.flex-column {
-	flex-direction: column;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #box1 {
@@ -60,16 +80,4 @@ html, body {
 
 #box2 {
 	width: 60%;
-}
-
-.row {
-	flex-direction: row;
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
 }
