@@ -48,18 +48,34 @@ footer {
 
 .left, .right {
 	width: 23%;
-	display: inline-block;
+	align-self: start;  
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
 }
 
 .middle {
 	width: 50%;
-	display: inline-block;
+	align-self: start;  
 }
 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+
+.container-parent {
+	width: 100%;
+	display: inline-flex;
+	margin: auto;
+
 }
 
 .container {
