@@ -48,10 +48,12 @@ footer {
 
 .left, .right {
 	width: 23%;
+	display: inline-block;
 }
 
 .middle {
 	width: 50%;
+	display: inline-block;
 }
 
 .row:after {
