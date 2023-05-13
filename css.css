@@ -47,12 +47,10 @@ footer {
 }
 
 .left, .right {
-	display: inline-block;
-	width: 23.1%
+	width: 23.1%;
 }
 
 .middle {
-	display: inline-block;
 	width: 50%;
 }
 
