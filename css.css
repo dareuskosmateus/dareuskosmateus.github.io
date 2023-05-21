@@ -1,99 +1,115 @@
-html, body {
+html {
 	background-image: linear-gradient(#D3D3D3, #383838);
 	background-color: #A9A9A9;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+main  {
+
 }
 
 img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    
 }
 
 footer {
-	position:fixed;
-	width: 100%;
-	bottom: 0;
-}
-
-.main {
-	margin: 0 auto;
-	background-color: #D3D3D3;
-	border-radius: 12px;
-	margin-left: 12px;
-	margin-right: 12px;
-}
-
-.top {
-	width: 100%;
-	height: 33%;
-	margin-bottom: 18px;
-	background-image: url("https://i.imgur.com/ruda8XT.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.nobold {
-	font-weight: normal;
-}
-
-.column {
-	float:left;
-}
-
-.flex-column{
-	flex-direction: column;
-}
-
-.left, .right {
-	width: 23%;
-	align-self: start;  
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
-.middle {
-	width: 50%;
-	align-self: start;  
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-.container-parent {
-	width: 100%;
-	display: inline-flex;
-	margin: auto;
-
-}
-
-.container {
-	width: 90%;
-	display: flex;
-	margin: auto;
-	margin-top: 12px;
-	margin-bottom: 12px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #2A2A2A;
+    width: 100%;
 }
 
 .shadow {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#box1 {
-	width: 40%;
+.grid-container {
+    display: grid;
+
 }
 
-#box2 {
-	width: 60%;
+.grid-columns {
+    grid-template-columns: 0fr 20fr 52fr 20fr 0fr;
+    grid-gap: 1rem;
+}
+
+.grid-item {
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    
+}
+
+.flex-item {
+    
+}
+
+.main-middle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-bottom {
+    height: 25rem;
+    width: 100%;
+    
+}
+
+.section {
+    border-radius: 12px;
+    background-color: #D3D3D3;
+    padding: 1rem;
+}
+
+.inline {
+    display: inline;
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+#mem {
+}
+
+@media only screen and (max-width: 800px) {
+    
+        .grid-columns {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            
+        }
+        
+        .middle {
+            order: 1;
+        }
+        
+        .right {
+            order: 2;
+        }
+        
+        .left {
+            order: 3;
+        }
+        
+        
+        
+        
+        
 }

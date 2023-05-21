@@ -2,21 +2,21 @@
 
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" lang='pl'>
 		<title> Test title </title>
 		<link rel="stylesheet" type="text/css" href="css.css">
 	</head>
 
 	<body class='gradient'>
-		<div class='top'> 
-		</div>
-
-		<div class='row container-parent'>
-			<div class='main column left shadow'>
-				<div class='container flex-column'>
-					<h2> Mem dnia </h2>
-					<img id='mem' src="">
-					<script type="text/javascript">
+	<main>
+		<div class='grid-container' id='root'>
+            <div class='grid-item grid-container main-top'> <img src='https://i.imgur.com/ruda8XT.png'> </div>
+			<div class='grid-item grid-container grid-columns main-middle'> 
+                <div class='space'> </div>
+                <div class='grid-item left section shadow'>
+                <h2> Mem dnia </h2>
+                <img id='mem' src=''>
+                <script type="text/javascript">
 							var lista = new Array("https://media.tenor.com/A3hhQKPauQUAAAAd/monad-monoid.gif",
 							 "https://media.tenor.com/QX4IF0UvwukAAAAd/updog-whats-is-dog-want.gif",
 							 "https://media.discordapp.net/attachments/562319414498689024/1103254444658937906/ezgif-2-d182f06bde.gif", 
@@ -26,42 +26,35 @@
 							var random = Math.floor(Math.random()*lista.length);
 							document.getElementById("mem").src = lista[random];
 					</script>
-				</div>
+                </div>
+                <div class='grid-item grid-container middle section shadow'> 
+                    <div class='grid-item'> 
+                        <h1> Dariusz Romanowicz </h1>
+                        <h3> Dane kontaktowe </h3>
+                        <ul>
+                        <li> dariuszromanowicz(at)o2(kropka)pl
+                        <li> <a href='https://github.com/dareuskosmateus'> Github </a> </li>
+                        <li> Discord: daro#6342 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='grid-item right section shadow'> 
+                <span class='inline'> <b>Szukaj</b> <input> </input> </span>
+
+                </div>
+                <div class='space'> </div>
 			</div>
 
-			<div class='main column middle shadow'>
-				<div class='container'>
-					<div id="box1"> <h1> Dariusz Romanowicz </h1></div>
-					<div id="box2"> 
-						<h2 class="nobold"> Dane kontaktowe:  </h2>
-						<div id='dane'> 
-							<h4 class="nobold"> Email: dariuszromanowicz(at)o2.pl </h4>
-						<span style="font-size: 24pt"> Moje linki </span>
-						<ul>
-							<span style="font-size: 18pt">
-							<li><a href="https://github.com/dareuskosmateus"> Github </a></li>
-							<li><a> Discord: daro#6342 </a></li>
-							</span>
-						</ul> 
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class='main column right shadow'>
-				<div class='container flex-column'>
-					<input type='text' placeholder="Szukaj">
-					<a class="active" href="#home">Strona główna</a>
-				</div>
+            <div class='grid-item grid-container main-bottom'> 
+			
 			</div>
 
 		</div>
-
-		
+	</main>	
+    <footer>
+        <p>Copyright 2023 Dariusz Romanowicz</p>
+    </footer>
 	</body>
 
-	<footer>
-		<a>Copyright 2023 Dariusz Romanowicz</a>
-	</footer>
+
 </html>
